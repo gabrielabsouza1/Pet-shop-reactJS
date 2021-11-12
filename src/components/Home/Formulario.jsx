@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import patinha from "../components/images/patinha-botao.png";
+import patinha from "../images/patinha-botao.png";
 import { useForm } from "react-hook-form";
 
 const Formulario = () => {

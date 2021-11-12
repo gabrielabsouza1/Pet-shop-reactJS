@@ -6,15 +6,14 @@
     min-height: 50rem;
 }
 
-.logotipo {
-    max-height: 10rem;
-    max-width: 12rem;
-    margin-left: 10px;
-}
-
 .position-home {
     margin-top: 5rem;
 } 
+
+
+.navegador {
+  display: flex;
+}
 
 #cabecalho {
     background-color: white;
@@ -158,3 +157,173 @@
       transform: translateX(0);
     }
   } 
+  .img-vet {
+    width: 550px;
+    height: 550px;
+}
+
+.img-check2 {
+    width: 40px;
+    height: 40px;
+}
+
+.razoes {
+  position: relative;
+  margin: 0 auto;
+}
+
+.razoes li {
+  display: inline-flex;
+  text-align: center;
+  width: 15rem;
+  vertical-align: top;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  margin-right: 1rem;
+}
+
+.titulo-sobre {
+  font-family: 'Sansita Swashed', cursive;
+  color: #946336;
+  font-size: 1.7rem;
+}
+
+.subtitulo-sobre {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 2.5rem;
+  color: #38b6ff;
+}
+
+.texto-sobre {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: #5c5b5b;
+}
+
+.bg-servicos {
+  background: #fdc3b4;
+}
+
+.subtitulo-servicos {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 2.5rem;
+}
+
+.titulo-card {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 1.7rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.img-card {
+  width: 214px;
+  height: 190px;
+  margin-top: 15px;
+  border-radius: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: white;
+}
+
+.icone-pacotes {
+  list-style-image: url(components/images/patinha.png);
+}
+
+.subtitulo-card {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 1.7rem;
+  color: #946336;
+}
+
+.map-style {
+  border-radius: 20px;
+  width: auto;
+  height: 400px;
+}
+
+.bg-localizacao {
+  background-image: url(components/images/bg-localizacao.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 57rem;
+}
+
+.logotipo-footer {
+  width: 20rem;
+  height: 7rem;
+}
+
+.redes-sociais {
+  display: flex;
+  width: 320px;
+  justify-content: center;
+}
+
+.whatsapp {
+  background-image: url(components/images/whatsapp.png);
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.whatsapp:hover {
+  background-image: url(components/images/whatsapp-verde.png);
+  transition: 0.5s;
+}
+
+.facebook {
+  background-image: url(components/images/facebook.png);
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.facebook:hover {
+  background-image: url(components/images/facebook-azul.png);
+  transition: 0.5s;
+}
+
+.instagram {
+  background-image: url(components/images/instagram.png);
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.instagram:hover {
+  background-image: url(components/images/instagram-colorido.png);
+  transition: 0.5s;
+}
+
+.github {
+  background-image: url(components/images/github.png);
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.github:hover {
+  background-image: url(components/images/github-preto.png);
+  transition: 0.5s;
+}
+
+.card-width {
+  width: 5rem;
+}

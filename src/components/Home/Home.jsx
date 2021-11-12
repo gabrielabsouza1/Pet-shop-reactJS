@@ -1,7 +1,7 @@
 import React from "react";
-import  Formulario  from "../components/Formulario"
+import  Formulario  from "../Home/Formulario"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TextoHome from "./TextoHome";
+import TextoHome from "../Home/TextoHome";
 
 const Home = () => {
     return (

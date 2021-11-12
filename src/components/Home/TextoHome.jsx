@@ -1,5 +1,5 @@
 import React from "react";
-import check from "../components/images/check.png"
+import check from "../images/check.png"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TextoHome = () => {
