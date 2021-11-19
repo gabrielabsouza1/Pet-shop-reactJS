@@ -6,26 +6,6 @@
     min-height: 50rem;
 }
 
-.position-home {
-    margin-top: 5rem;
-} 
-
-
-.navegador {
-  display: flex;
-}
-
-#cabecalho {
-    background-color: white;
-    opacity: 1;
-    height: 5rem;
-}
-
-.bg-nav {
-  background-color: white;
-  opacity: 1;
-}
-
 .right-animation {
     animation: go-left 1.5s;
 }

@@ -1,55 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logotipo from "../images/logotipo.png";
 import styled from "styled-components";
+import "./cabecalho.css"
 
-
-const Nav = styled.div`
-display: flex;
-align-itens: center;
-justify-content: space-between;
-`
 
 const Logo = styled.img`
     max-height: 10rem;
     max-width: 12rem;
-    margin-left: 10px;
+    margin-left: 25px;
 `;
 
 
-const Menu = styled.ul`
-display: flex;
-`
-
-const MenuLink = styled.li`
-    width: 50px;
-    height: 50px;
-    display: flex;
-`
-
-
 const Cabecalho = () => {
+
+    const [isMobile, setisMobile] = useState(false);
+
     return (
         <>
-            <Nav id="cabecalho" >
+            <nav className="navbar" id="cabecalho" >
                 <a href="#home"><Logo src={logotipo} alt="logotipo pet shop"></Logo></a>
-                <Menu>
-                    <MenuLink>
+                <ul onClick={() => setisMobile(false)}
+                className={isMobile ? "nav-links-mobile" : "nav-links"}
+                >
+                    <li className="home">
                         <a href="#home">Home</a>
-                    </MenuLink>
-                    <MenuLink>
+                    </li>
+                    <li className="sobre">
                         <a href="#sobre-nós">Sobre nós</a>
-                    </MenuLink>
-                    <MenuLink>
+                    </li>
+                    <li className="servicos">
                         <a href="#serviços">Serviços</a>
-                    </MenuLink>
-                    <MenuLink>
+                    </li>
+                    <li className="pacotes">
                         <a href="#pacotes">Pacotes</a>
-                    </MenuLink>
-                    <MenuLink>
+                    </li>
+                    <li className="localizacao">
                         <a href="#localizacao">Localização</a>
-                    </MenuLink>
-                </Menu>
-            </Nav>
+                    </li>
+                </ul>
+                <button
+                    className="mobile-menu-icon"
+                    onClick={() => setisMobile(!isMobile)}
+                >
+                    {isMobile ? (
+                        <i className="fas fa-times"></i>
+                    ) : (
+                        <i className="fa fa-bars"></i>
+                    )}
+                </button>
+            </nav>
         </>
     );
 };
